@@ -74,8 +74,8 @@ export class JploftComponent implements OnInit {
     let data={
       firsArr:value[ev?.dropIndex],
       secondArr:value[ev?.dragIndex],
-      dragIndex:ev.dragIndex,
-      dropIndex:ev.dropIndex
+      dragIndex:ev?.dragIndex,
+      dropIndex:ev?.dropIndex
     }
     this.clientIO.emit('new data',data); 
 
